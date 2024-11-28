@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando o tamanho da imagem de fundo do site</title>
+    <style>
+        body {
+            height: 100vh; /*Faz a imagem ficar com altura de 100vh, feixando o black de baixo também*/
+            background-color: black;
+            background-image: url(imagem/wallpaper002.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: 100% 100%; /*colocando bground size de 100%(100% de width e de height), cobre toda tela apenas no navegador do pc, mas no cell/tablet nao*/
+
+            /*temos varios tipos de medida bground size, veja abaixo:display:
+                contain-> mostra a imagem a 100% no bground sem fazer nenhum corte, porem se ajusta a tela (Não preenche tela).
+                 cover -> ele faz cortes mas preenche a tela
+                 auto -> o navegadore se vira para ajustar a imagem*/
+
+        }
+
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 0.5px dashed darkblue;
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis possimus molestiae natus autem eaque corporis facere, suscipit debitis illo quia, quaerat qui illum quisquam delectus necessitatibus eum sunt consectetur commodi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nostrum reiciendis debitis in quo illum, ea pariatur ex animi laborum rem deserunt qui. Minima sed earum natus? Laudantium, dolor dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam delectus hic, similique aperiam mollitia veniam autem doloribus quasi quia vitae natus recusandae vel pariatur perferendis error eveniet perspiciatis voluptatibus numquam.</p>
+    </main>
+</body>
+</html>
