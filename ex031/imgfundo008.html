@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            background-image: url(imagem/target001.png);
+            background-size: 100% 100%;
+
+            position: relative; /*É Opcional colocar position relative, pois ela ja vem assim por padrao*/
+            height: 96vh; /* vh significa view height (visao da altura) */
+            padding: 10px;
+            background-color: purple;
+
+        }
+
+        #conteudo {
+            background-image: url(imagem/target001.png);
+            background-size: 100% 100%;
+            position: absolute; /**/
+            height: 200px;
+            width: 400px;
+            /*  margin:auto; apenas serve para alinhamento central horizontal*/
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%; /*Essa linha esta relacionada com a do position:absolute;*/
+
+            transform: translate(-50% , -50%); /*é para mexer na imagem amarela e rotaciona-la consoante o valor entre ()*/
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
