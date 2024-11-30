@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .nome {
+            background-color: aqua;
+        }
+
+        .sexo {
+            background-color: aliceblue;
+        }
+
+        col.cores {
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Colunas com Colgroup</h1>
+
+    <table>
+        
+        <colgroup>
+            <!--A ordem do col importa-->
+            <col class="nome">
+            <col class="sexo">
+            <col class="cores" span="3"> <!--Esse span 2, faz 3 colunares serem pintadas. mas deve colocar numa boa ordem, se colocar no fim nao pinta nada. -->
+            <col class="idade">
+            <col class="prof">
+           
+        </colgroup>
+
+
+        <caption>
+            cadastro
+        </caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">profissão</th>
+            <th scope="col">Ocupação</th>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Cozinhar</td>
+        </tr>
+
+        <tr>
+            <td>Recildo</td>
+            <td>M</td>
+            <td>44</td>
+            <td>trader profisional/progamador</td>
+            <td>Atletismo</td>
+        </tr>
+
+        <tr>
+            <td>Jeque Timbe</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Eng.Civil</td>
+            <td>Business</td>
+        </tr>
+
+        <tr>
+            <td>Yulan Raquel</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Eng.civil</td>
+            <td>Cooking</td>
+        </tr>
+
+       <tr>
+            <td>Rayane Bambo</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Medica/Doutora</td>
+            <td>Cooking</td>
+       </tr>
+
+    </table>
+</body>
+</html>
